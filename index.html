@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"> Prakamya Yoga</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Testimonials</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Prakamya Yoga</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+          <li><a href="#reviews" onclick="toggleMenu()">Testimonials</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Satya Jyothi profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Satya Jyothi</h1>
+        <p class="section__text__p2">Yoga Instructor</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Jayaram_Uday_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/satyajyothi-prakamya/'"
+            
+          />
+          <img src="./assets/instagram.png" 
+          alt="instagram icon" 
+          class="icon contact-icon" 
+          onclick="location.href='https://www.instagram.com/prakamya__yoga/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container section_pic-box">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            s
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Profession</h3>
+              <p> <br />Yoga Instructor (12 years)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>PGD in Yoga Therapy, <br />Jadavpur University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Welcome to my corner of tranquility! I'm Satya, a passionate yoga instructor dedicated to guiding individuals towards holistic well-being through the transformative power of yoga.                    
+              My teaching style is a harmonious blend of mindful movement, breath awareness, and spiritual exploration, drawing inspiration from various yoga traditions including Hatha, Vinyasa, and Yin yoga. My classes offer a sanctuary where
+              students can reconnect with their bodies, quiet their minds, and tap into their inner wisdom.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Accolades</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RYT200</h3>
+                  <p>Traditional yoga</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RYT500</h3>
+                  <p>Traditional yoga</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PGDYT</h3>
+                  <p>Jadavpur University</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DNHE</h3>
+                  <p>IGNOU University</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Aerial yoga</h3>
+                  <p>Vinyasa Yoga Ashram</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Yoga Professional Level 2</h3>
+                  <p>Ministry of Aayush</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Yoga</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hatha yoga</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pranayama</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Meditation</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Liver detox </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Mudra & Bandhas</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kriyas</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+              
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Sound Healing</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+              
+              
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Panchakarma</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#services'"
+      />
+    </section>
+
+
+
+
+    <section id="services">
+      <p class="section__text__p1">Explore my</p>
+      
+    
+      <h1 class="title">Services</h1>
+      <h2 class="section__text__p1">Free Trail class for 2 days  </h2>
+            <div class="about-containers blocks">
+              <div class="details-container color-container">
+                <div class="article-container">
+            
+              </div>
+              <h2 class="pricing-title">Monthly</h2>
+              <p class="pricing-price">$50</p>
+              <ul class="pricing-features">
+                <li>4 Classes/Week</li>
+                <li>Group Sessions</li>
+                <li>Online </li>
+              </ul>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='./#contact'"> Contact </button>
+             
+              </div>
+              <div class="details-container color-container">
+                
+              
+                <h2 class="pricing-title">3 Months</h2>
+                <p class="pricing-price">$130</p>
+                <ul class="pricing-features">
+                  <li>4 Classes/Week</li>
+                  <li>Group Sessions</li>
+                  <li>Online </li>
+                 
+                </ul>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='./#contact'"> Contact </button>
+               
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                
+                </div>
+              
+                <h2 class="pricing-title">Personal</h2>
+                <p class="pricing-price">$12/Hour</p>
+                <ul class="pricing-features">
+                  <li>One to One Sessions</li>
+                
+                  <li>Personalized Coaching</li>
+                  <li>Online </li>
+                
+                </ul>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='./#contact'"> Contact </button>
+              </div>
+              <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#gallery'" />
+            </div>
+            
+      
+    </section>
+
+
+
+    
+    <section id="gallery">
+      <p class="section__text__p1">Explore Our</p>
+      <h1 class="title">Gallery</h1>
+      <h2 class="section__text__p1">Since past 12 years I have been trainging an  </h2>
+      <div class="gallery-container">
+        <div class="gallery-images">
+          <img src="./assets/img_1.jpg" alt="Gallery Image 1" class="gallery-img">
+          <img src="./assets/img_2.jpg" alt="Gallery Image 2" class="gallery-img">
+          <img src="./assets/img_3.jpg" alt="Gallery Image 3" class="gallery-img">
+          <img src="./assets/img_4.jpg" alt="Gallery Image 4" class="gallery-img">
+          <img src="./assets/img_5.jpg" alt="Gallery Image 4" class="gallery-img">
+          <img src="./assets/img_6.jpg" alt="Gallery Image 4" class="gallery-img">
+          <img src="./assets/img_7.jpg" alt="Gallery Image 4" class="gallery-img">
+          <img src="./assets/img_8.jpg" alt="Gallery Image 4" class="gallery-img">
+         
+        </div>
+        </div>
+        
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#reviews'" />
+    </section>
+    <section id="reviews">
+      <p class="section__text__p1">What Our Students Say</p>
+      <h1 class="title">Testimonials</h1>
+      <div class="reviews-container">
+        
+        <div class="review">
+          <p class="review-text">"I have been practising Yoga for a few years now but joining the Prakamya yoga with Satya has been a next level experience.She is very scientific in her approach and does not follow a fixed pattern of practice and ensures every body muscle is exercised through different yogic practice .The meditation is absolutely next level , in a few weeks of practice I am able to feel the benefits"</p>
+          <p class="review-author">- Gina Krishnan</p>
+        </div>
+        <div class="review">
+          <p class="review-text">"I had the pleasure of being a student of Jyothi for the past one and half years, and it has
+            been an incredibly
+            transformative journey. Jyothi has a deep understanding of both the physical and spiritual aspects of yoga. She
+            deeply
+            honors the mind-body-spirit connection. One of the best attributes is that the classes are truly judgment-free and
+            not
+            at all competitive.
+        
+            I have gained not only flexibility and strength but also inner peace and mindfulness through her teachings. I highly
+            recommend Jyothi to anyone seeking a compassionate and knowledgeable yoga instructor."</p>
+          <p class="review-author">- Seema Vijayan</p>
+        </div>
+        <div class="review">
+          <p class="review-text">"Its been a year and half of yoga with Satyajyoti and i difference both physically and mentally is showing. Body is lighter, flexible and more agile and the ease and calm with which I am dealing with life is the best gift. Every session is refreshing, strengthening and rejuvenating. The bonus is the kriya’s we have started following since we started the practice."</p>
+          <p class="review-author">- Tina</p>
+        </div>
+        <div class="review">
+          <p class="review-text">"I’m Dr Sunita from gurgaon I have had an amazing journey with jyoti as my yoga teacher. She addressed my health issues
+          with utmost sincerity and sensibility and expertise. She has indept knowledge of the subject and is a passionate
+          teacher.the icing on the cake ,is her innate energy to heal people."</p>
+          <p class="review-author">- Dr. Sunita</p>
+        </div>
+        <div class="review">
+          <p class="review-text">"This is Nibedita Banerjee, 64 years of age. It is now 6 months that I am learning yoga under Satya Jyothi. I used to have a nagging back pain and had problem travelling long distances. But now my back pain is entirely gone and my digestion capability has improved which in turn has helped to lower my weight. Jyothi is a very good and experienced
+          teacher. She explains everything thoroughly and tries to evaluate the specific needs of each trainee. Her method of
+          teaching is such that she takes pains to explain the background and rationale for each exercise which helps one to
+          understand one’s body and mind."</p>
+          <p class="review-author">- Nibedita Banerjee</p>
+        </div>
+        
+        
+        <!-- Add more reviews as needed -->
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+      <div class="project-container">
+        <div class="project-box"></div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <!-- <h2 class="section__text__p1">Drop a mail or Message</h2> -->
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:prakamyayoga@gmail.com">prakamyayoga@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="instagram icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.instagram.com/prakamya__yoga/">instagram</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/whatsapp.jpg" alt="whatsapp icon" class="icon contact-icon email-icon" />
+          <p><a href="https://wa.me/9989919399">WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>copyright &#169; 2024 Satyajyoti. All rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
